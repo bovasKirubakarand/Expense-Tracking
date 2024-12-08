@@ -1,0 +1,17 @@
+<div class="expense-form">
+  <input type="text" placeholder="Expense Name" [(ngModel)]="expenseName" />
+  <input type="number" placeholder="Price" [(ngModel)]="expensePrice" />
+  <button (click)="addExpense()">Add Expense</button>
+</div>
+
+<div class="expense-list" *ngIf="expenses.length > 0">
+  <h2>Expense List</h2>
+  <ul>
+    <li *ngFor="let expense of expenses">
+      {{ expense.name }}: ₹{{ expense.price }}
+    </li>
+  </ul>
+  <div class="total">
+    <strong>Total: ₹{{ getTotalExpense() }}</strong>
+  </div>
+</div>

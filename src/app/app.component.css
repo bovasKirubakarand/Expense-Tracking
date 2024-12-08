@@ -1,0 +1,11 @@
+.header {
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 20px 0;
+}
+.main-content {
+  margin: 20px auto;
+  max-width: 600px;
+  font-family: Arial, sans-serif;
+}
